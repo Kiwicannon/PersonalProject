@@ -1,17 +1,74 @@
 <html ng-app="app">
-	<body ng-controller="mainCtrl">
-		{{test}}<br>
-		{{test1}}
-        <br>
-        <br>
-        <ui-view>
 
-        </ui-view>
-	
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
-		<script src="app.js"></script>
-		<script src="controller.js"></script>
-		<script src="service.js"></script>
-	</body>
+<body ng-controller="mainCtrl">
+	<header>
+		<div class="desktop-header">
+			<div class="header-top-bar">
+				<div class="currency-block">
+					<select class="nn-currencies currency-picker select2-hidden-accessible" name="currencies" tabindex="-1" aria-hidden="true">
+						<option value="USD" selected="selected">USD</option>
+						<option value="GBP" data-value="GBP">GBP</option>
+						<option value="EUR" data-value="data-value">EUR</option>
+						<option value="AUD" data-value="data-value">AUD</option>
+						<option value="CAD" data-value="data-value">CAD</option>
+						<option value="HKD" data-value="data-value">HKD</option>
+						<option value="CNY" data-value="data-value">CNY</option>
+						<option value="RUB" data-value="data-value">RUB</option>
+						<option value="TWD" data-value="data-value">TWD</option>
+						<option value="NZD" data-value="data-value">NZD</option>
+						<option value="DKK" data-value="data-value">DKK</option>
+						<option value="AED" data-value="data-value">AED</option>
+						<option value="MXN" data-value="data-value">MXN</option>
+					</select>
+					<!--<span class="select2 select2-container select2-container--default select2-container--below select2-container--focus select2-container--open" dir="ltr" style="width: 105px;">
+						<span class="selection">
+							<span class="select2-selection select2-selection--single currency-dropdown-main" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-currencies-yh-container">
+								<span class="select2-selection__rendered" id="select2-currencies-yh-container" title="USD">USD</span>
+								<span class="select2-selection__arrow" role="presentation">
+									<b role="presentation"></b>
+								</span>
+						</span>
+					<span class="dropdown-wrapper" aria-hidden="true"></span>
+					
+					</span>-->
+				</div>
+				<div class="free-shipping-block">
+					<p>Free shipping worldwide on all orders over $50</p>
+				</div>
+				<div class="account-cart-block">
+					<ul>
+						<li class="my-account">
+							<a href="/account">My Account</a>
+							<ul>
+								<li>
+									<a class="button button--white button--full-width" href="/account">Log in</a>
+								</li>
+								<li>
+									<a class="button button--white-reversed button--full-width" href="/account">Sign up</a>
+								</li>
+							</ul>
+						</li>
+						<li class="my-cart trigger-cart">
+							<span data-item-count>0 item</span>
+							<img src="./Pictures/cart.svg" alt="Cart">
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<ui-view>
+
+	</ui-view>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+	<script src="app.js"></script>
+	<script src="controller.js"></script>
+	<script src="service.js"></script>
+	<link href="/mainStyle.css" rel="stylesheet">
+</body>
+
 </html>
