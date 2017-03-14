@@ -1,9 +1,11 @@
 <html ng-app="app">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
 
 <body ng-controller="mainCtrl">
 	<header>
 		<div class="desktop-header">
-			<div class="header-top-bar">
+			<div class="header-top-bar space-between">
 				<div class="currency-block">
 					<select class="nn-currencies currency-picker select2-hidden-accessible" name="currencies" tabindex="-1" aria-hidden="true">
 						<option value="USD" selected="selected">USD</option>
@@ -56,7 +58,148 @@
 					</ul>
 				</div>
 			</div>
+			<div class="header-bottom-block">
+				<div class="logo-block">
+					<a href='/#/'>
+						<img src="./Pictures/mvmt-logo.svg" alt="MVMT Watches">
+					</a>
+				</div>
+				<div class="nav-holder">
+					<nav>
+						<ul class="nav">
+							<li class="has-dropdown return-false-click menu-item-submenu-shop-mens main-level-item">
+								<a href="/pages/shop-mens">Shop Mens</a>
+								<ul class="sub-nav">
+									<li class="has-dropdown-more is-activemens-watches-list">
+										<a href="/collections/all-mens-watches">watches</a>
+										<ul class="grand-children-nav">
+											<li class='is-active-grand-children'>
+												<a href="/collections/all-mens-watches" src="./Pictures/all-mens-watches.jpg"> All Mens Watches </a>
+												<div class="collection-info-holder">
+													<div class="image-holder">
+														<img data-collection-image src="./Pictures/all-mens-watches.jpg">
+													</div>
+													<div class="collection-content-holder">
+														<h4 data-collection-header>All Mens Watches</h4>
+														<p data-collection-content>
+															<span>Classic style meets modern design.</span>
+														</p>
+													</div>
+												</div>
+											</li>
+											<li class>
+												<a href='/collections/best-sellers' src="./Pictures/mens-best-sellers.jpg"> Best Sellers </a>
+												<div class="collection-info-holder">
+													<div class="image-holder">
+														<img src="./Pictures/mens-best-sellers.jpg">
+													</div>
+													<div class="collection-content-holder">
+														<h4>Best Sellers</h4>
+														<p><span>Trending in the world of MVMT.  Find your favorite style.</span>
+														</p>
+													</div>
+												</div>
+											</li>
+											<li class>
+												<a href="./collections/modern-sport" src="./Pictures/Mens-ModernSport_Maverick.jpg">Modern Sport</a>
+												<div class="collection-content-holder">
+													<div class="image-holder">
+														<img src="./Pictures/Mens-ModernSport_Maverick.jpg">
+													</div>
+													<h4>Modern Sport</h4>
+													<p><span>From work to play - this 42mm waterproof case is where sophistication meets sport.</span></p>
+												</div>
+											</li>
+										</ul>
+
+									</li>
+									<li class="has-dropdown-more mens-straps-list">
+										<a href="#">Straps</a>
+									</li>
+									<li class="has-dropdown-more mens-sunglasses-list">
+										<a href="/mens-sunglasses">Sunglasses</a>
+										<ul class="grand-children-nav">
+											<li class="is-active-grand-children">
+												<a href="/mens-sunglasses" src="./Pictures/mens-sunglasses.jpg">All Mens Sunglasses</a>
+												<div class="collection-info-holder">
+													<div class="image-holder">
+														<img src="./Pictures/mens-sunglasses.jpg">
+													</div>
+													<div class="collection-content-holder">
+														<h4>Mens Sunglasses</h4>
+														<p><span>From retro to modern, find the perfect shades to match your spirit of adventure.</span></p>
+
+													</div>
+												</div>
+											</li>
+
+
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="has-dropdown return-false-click menu-item-submenu-shop-womens main-level-item is-active-dropdown">
+								<a href="/pages/shop-womens">Shop Womens</a>
+							</li>
+							<li class="main-level-item">
+								<a href="/pages/shopig">Shop Insta</a>
+							</li>
+							<li class="main-level-item">
+								<a href="/blogs/the-mvmt">Blog</a>
+							</li>
+							<li class="has-dropdown menu-item-more main-level-item is-active-dropdown">
+								<a href="#">More</a>
+							</li>
+							<li class="show-on-small active">
+								<form class="search main-search" action="/search">
+									<input type="hidden" name="type" value="product">
+									<div class="form-input">
+										<input type="text" placeholder="Searth the site..." name="q" value>
+									</div>
+									<div class="form-cta">
+										<button type="submit" class="button js-search">
+										<i class="fa fa-search">
+											
+										</i>
+									</button>
+									</div>
+								</form>
+							</li>
+
+
+						</ul>
+
+
+					</nav>
+				</div>
+			</div>
 		</div>
+		<div class="mobile-header">
+			<div class="mobile-shipping-banner"></div>
+			<p>Free shipping worldwide on all orders over $50</p>
+			<img src="./Pictures/close-white.svg" alt="close">
+		</div>
+		<ul class="nav-elements space-between">
+			<li id="triggerMenu">
+				<a class="trigger-mobile-menu" href="#"></a>
+			</li>
+			<li>
+			<a class="mobile-logo" href="/#/">
+				<img src="./Pictures/mvmt-logo.svg" alt="MVMT Watches">
+			</a>
+			</li>
+			<li id="mobileCart">
+				<a class="mobile-cart" href="#">
+					<div class="cart-info">
+						<img class="cart-img" src="./Pictures/cart-black.svg">
+						<span class="total-item-count">0</span>
+					</div>
+					<div class="close-block" style="display: none;">
+						<img src="./Pictures/close-x.svg">
+					</div>
+				</a>
+			</li>
+		</ul>
 	</header>
 
 	<ui-view>
