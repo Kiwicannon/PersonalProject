@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
 header{
     position: fixed;
     z-index: 7;
@@ -6,22 +6,15 @@ header{
     min-width: 320px;
 }
 body{
-    font-family: "Gotham"
+    font-family: "Montserrat"
 }
 html{
     font-size: 100%;
     line-height: 1.5;
 }
-@media only screen and (min-width: 768px){
-    .main-search{
-        margin: 16px 0 16px 25px;
-    }
-}
-@media only screen and (min-width: 992px)
-{
-.desktop-header {
-    display: block;
-}
+
+
+
 .header-top-bar{
     display: flex;
     
@@ -29,9 +22,12 @@ html{
 .free-shipping-block{
     display: block
 }
+.desktop-header{
+    display: none
+    }
 .form-cta .button {
     margin: 0;
-}}
+}
 .header-bottom-block {
     display: -webkit-box;
     display: -webkit-flex;
@@ -106,7 +102,7 @@ html{
     background: transparent url(//cdn.shopify.com/s/files/1/0377/2037/t/37/assets/select-arrows-white.png?15469413115253479032) no-repeat 83px 11px;
     background-size: 6%;
     cursor: pointer;
-    font-family: "Gotham-Bold";
+    font-family: "Montserrat-Bold";
     font-size: 11px;
     letter-spacing: 1px;
     -webkit-appearance: none;
@@ -168,7 +164,7 @@ button, select{
     background: transparent url(./Pictures/select-arrows-white.png) no-repeat 98px 7px;
     background-size: 5%;
     cursor: pointer;
-    font-family: "Gotham-Bold";
+    font-family: "Montserrat-Bold";
     font-size: 11px;
     letter-spacing: 1px;
     -webkit-appearance: none;
@@ -181,7 +177,7 @@ button, select{
     line-height: 28px;
 }
 .select2-container--default .select2-selection__rendered{
-        font-family: "Gotham" !important;
+        font-family: "Montserrat" !important;
     font-weight: bold;
     font-size: 11px !important;
     text-transform: uppercase;
@@ -190,7 +186,7 @@ button, select{
     display: none !important;
 }*/
 .free-shipping-block {
-    font-family: "Gotham-Bold";
+    font-family: "Montserrat-Bold";
     font-size: 11px;
     letter-spacing: 1px;
     color: #fff;
@@ -212,7 +208,7 @@ ul{
 }
 .account-cart-block>ul li {
     position: relative;
-    font-family: "Gotham-Bold";
+    font-family: "Montserrat-Bold";
     font-size: 11px;
     letter-spacing: 1px;
     color: #fff;
@@ -246,10 +242,18 @@ ul{
 .account-cart-block>ul li ul li:first-child {
     margin-bottom: 20px;
 }
+.button {
+    /* color: inherit; */
+    /* -webkit-appearance: none !important; */
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
 .button.button--white, .livechat_button a.button--white, #storemapper-go.button--white {
     background: #fff;
     text-transform: uppercase;
-    font-family: "Gotham-Bold";
+    font-family: "Montserrat 700";
     font-size: 11px;
     letter-spacing: 1px;
     color: #2c2c2c;
@@ -286,7 +290,7 @@ ul{
     border-radius: 1px;
     -webkit-transition: all 0.35s ease-in-out;
     transition: all 0.35s ease-in-out;
-    font-family: "Gotham-Bold";
+    font-family: "Montserrat-Bold";
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
     position: relative;
@@ -294,7 +298,7 @@ ul{
 .button.button--white-reversed, .livechat_button a.button--white-reversed, #storemapper-go.button--white-reversed {
     background: transparent;
     text-transform: uppercase;
-    font-family: "Gotham-Bold";
+    font-family: "Montserrat-Bold";
     font-size: 11px;
     letter-spacing: 1px;
     color: #fff;
@@ -379,7 +383,7 @@ ul {
 }
 .header-bottom-block .nav>li .sub-nav>li a {
     display: block;
-    font-family: "Gotham-Bold";
+    font-family: "Montserrat-Bold";
     font-size: 14px;
     line-height: 2;
     letter-spacing: 1px;
@@ -393,7 +397,8 @@ ul {
 .header-bottom-block .nav>li>a {
     position: relative;
     display: block;
-    font-family: "Gotham-Bold";
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.6px;
     color: #2c2c2c;
@@ -439,7 +444,7 @@ ul {
     white-space: nowrap;
 }
 .main-search input {
-    font-family: "Gotham Book";
+    font-family: "Montserrat";
     color: #676767;
     line-height: 1;
     font-size: .875rem;
@@ -458,3 +463,159 @@ input, button {
 a:hover{
     outline: 0
 }
+.mobile-header {
+    display: block;
+    border-bottom: 1px solid #f7f8f9;
+    background: #fff;
+}
+.nav-elements {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 52px;
+}
+.mobile-shipping-banner {
+    position: relative;
+    background: #2c2c2c;
+    padding: 15px;
+}  
+.mobile-shipping-banner p {
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+} 
+.mobile-shipping-banner img {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    -webkit-transform: translate(-5px, -50%);
+    transform: translate(-5px, -50%);
+    width: 10px;
+    height: auto;
+}
+#triggerMenu, #mobileCart {
+    cursor: pointer;
+    height: 100%;
+}
+.mobile-header .nav-elements li:nth-child(1), .mobile-header .nav-elements li:nth-child(3) {
+    width: 15%;
+}
+.nav-elements li {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.mobile-header .trigger-mobile-menu, .mobile-header .trigger-mobile-menu:after, .mobile-header .trigger-mobile-menu:before {
+    height: 2px;
+    width: 20px;
+    background-color: #222;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+.mobile-header .trigger-mobile-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-weight: 400;
+    border: 10px solid #fff;
+    border-top-width: 25px;
+    border-bottom-width: 25px;
+    box-sizing: content-box;
+}
+.mobile-header .trigger-mobile-menu:before {
+    top: 5px;
+}
+.mobile-header .trigger-mobile-menu:after {
+    top: -5px;
+}
+.mobile-header .trigger-mobile-menu:after, .mobile-header .trigger-mobile-menu:before {
+    content: "";
+    display: block;
+    position: absolute;
+}
+.mobile-header .trigger-mobile-menu, .mobile-header .trigger-mobile-menu:after, .mobile-header .trigger-mobile-menu:before {
+    height: 2px;
+    width: 20px;
+    background-color: #222;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+.mobile-header .nav-elements li:nth-child(2) {
+    width: 70%;
+    padding: 12px 0px;
+    border-left: 1px solid #f7f8f9;
+    border-right: 1px solid #f7f8f9;
+}
+.mobile-header .nav-elements li {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.mobile-header .nav-elements .cart-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -63%);
+    transform: translate(-50%, -63%);
+}
+.mobile-header .nav-elements .cart-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -63%);
+    transform: translate(-50%, -63%);
+}
+.mobile-header .nav-elements li:nth-child(3) span {
+    position: relative;
+    left: 1px;
+    display: block;
+    font-family: "Montserrat";
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+}
+@media only screen and (min-width: 768px){
+    .main-search{
+        margin: 16px 0 16px 25px;
+    }
+    
+}
+@media only screen and (min-width: 992px){
+    .desktop-header {
+    display: block;
+    }
+    .mobile-header{
+        display: none;
+    }
+}
+
