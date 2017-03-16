@@ -2,7 +2,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous">
 
-<body ng-controller="mainCtrl">
+<body ng-controller="mainCtrl" class="template__index cart-is-active" cz-shortcut-listen="true">
 	<header>
 		<div class="desktop-header">
 			<div class="header-top-bar space-between">
@@ -176,33 +176,33 @@
 		</div>
 		<div class="mobile-header">
 			<div class="mobile-shipping-banner">
-			<p>Free shipping worldwide on all orders over $50</p>
-			<img src="./Pictures/close-white.svg" alt="close">
+				<p>Free shipping worldwide on all orders over $50</p>
+				<img src="./Pictures/close-white.svg" alt="close">
 
-		</div>
-		<ul class="nav-elements space-between">
-			<li id="triggerMenu">
-				<a class="trigger-mobile-menu" href="#">
-					
-				</a>
-			</li>
-			<li>
-			<a class="mobile-logo" href="/#/">
-				<img src="./Pictures/mvmt-logo.svg" alt="MVMT Watches">
-			</a>
-			</li>
-			<li id="mobileCart">
-				<a class="mobile-cart" href="#">
-					<div class="cart-info">
-						<img class="cart-img" src="./Pictures/cart-black.svg">
-						<span class="total-item-count">0</span>
-					</div>
-					<div class="close-block" style="display: none;">
-						<img src="./Pictures/close-x.svg">
-					</div>
-				</a>
-			</li>
-		</ul>
+			</div>
+			<ul class="nav-elements space-between">
+				<li id="triggerMenu">
+					<a class="trigger-mobile-menu" href="#">
+
+					</a>
+				</li>
+				<li>
+					<a class="mobile-logo" href="/#/">
+						<img src="./Pictures/mvmt-logo.svg" alt="MVMT Watches">
+					</a>
+				</li>
+				<li id="mobileCart">
+					<a class="mobile-cart" href="#">
+						<div class="cart-info">
+							<img class="cart-img" src="./Pictures/cart-black.svg">
+							<span class="total-item-count">0</span>
+						</div>
+						<div class="close-block" style="display: none;">
+							<img src="./Pictures/close-x.svg">
+						</div>
+					</a>
+				</li>
+			</ul>
 	</header>
 
 	<ui-view>
