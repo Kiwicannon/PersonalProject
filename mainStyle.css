@@ -926,5 +926,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     .footer-main-content .footer-signup {
     width: 25%;
     }
+   main {
+    margin-top: 122px;
+}
 }
 

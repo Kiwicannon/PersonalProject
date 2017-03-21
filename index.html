@@ -1,6 +1,10 @@
 <html ng-app="app">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous">
+	<link href="/mainStyle.css" rel="stylesheet">
+	<link href="/normalize.css" rel="stylesheet">
+	<link href="./sunglasses/sunglasses.css" rel="stylesheet">	
+	<link href="./sunglasses/mensSunglasses.css" rel="stylesheet">	
 
 <body ng-controller="mainCtrl" class="template__index cart-is-active" cz-shortcut-listen="true">
 	<header>
@@ -204,10 +208,11 @@
 				</li>
 			</ul>
 	</header>
-
+<main>
 	<ui-view>
 
 	</ui-view>
+	</main>
 	<footer class="global-footer">
 		<ul class="value-propositions">
 			<li>
@@ -327,9 +332,7 @@
 	<script src="app.js"></script>
 	<script src="controller.js"></script>
 	<script src="service.js"></script>
-	<link href="/mainStyle.css" rel="stylesheet">
-	<link href="/normalize.css" rel="stylesheet">
-
+	
 </body>
 
 </html>
