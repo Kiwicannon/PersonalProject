@@ -7,13 +7,13 @@ angular.module('app',['ui.router']).config(function($stateProvider, $urlRouterPr
         .state('home', {
             url: ('/'),
             templateUrl: './views/home/home.html',
-            controller: 'mainCtrl'
+            // controller: 'homeCtrl'
         })
 
         .state('sunglasses',{
             url:('/sunglasses'),
             templateUrl: './views/sunglasses/sunglasses.html',
-            controller: 'mainCtrl'
+            // controller: 'sunglassesCtrl'
             
         })
         .state('mens-sunglasses', {

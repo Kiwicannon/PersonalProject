@@ -1,7 +1,3 @@
-angular.module('app').controller('mainCtrl', function($scope, mainSvc){
-   mainSvc.getProducts().then(function(response){
-       $scope.products = response
-       console.log($scope.products)
-    
-   })
+angular.module('app').controller('sunglassesCtrl', function($scope, mainSvc){
+   
 })

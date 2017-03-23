@@ -39,7 +39,7 @@
         </span>
     </div>
 </section>
-<!--<section class="product-container max-1440">
+<section class="product-container max-1440">
     <div class="filtering-block">
         <div class="filtering-block-inside">
             <div class="filter-by-block">
@@ -165,15 +165,41 @@
             </div>
         </div>
     </div>
-</section>-->
-<img src="../../../mountain.jpg">
-        <img src="../../../public/assets/Sunglasses-imgs/Hyde_-_Crystal_Mirror_Front_large.jpg">
-<div class="product-result-block" >
-    <ul ng-repeat="product in products">
-        <img src='{{product.photo1front}}'>
+
+
+<!--<div class="product-result-block flex-3-grid">
+    <ul  class="products-container " ng-repeat="product in products">
+        <img class="img-container" src='{{product.photo1front}}'>
         
         <li>{{product.name}}</li>
         <li>{{product.price}}</li>
     </ul>
     
+</div>-->
+
+<div class="product-result-block">
+    <div class="product-grid flex-3-grid">
+        <div class="products-container product-grid-item" ng-repeat="product in products">
+            <div class="product-grid-item-inside">
+                <div class="prod-image-wrap">
+                    <!--<img class="img-secondary js-sunglasses-image" src="{{product.photo1side}}" data-variant="Pure Black/Crystal Mirror" style="visibility:hidden;">-->
+                    <img class="product-image img-main js-sunglasses-image" src="{{product.photo1front}}" data-variant="Pure Black/Crystal Mirror">
+                </div>
+                <div class="product-info">
+                    <h3>{{product.gendertype}} sunglasses</h3>
+                    <a>{{product.name}}</a>
+                    <div class="money-block">
+                        <span class="actual-price">
+                            <span class="money" data-currency-usd="{{product.price}}" data-currency="USD">{{product.price}}</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="variant-swatches variant-swatches--center"></div>
+                <a href="#" class="add-to-cart button button--black-gradient cart-btn cart-btn-desktop test" add-to-cart data-variant-id="29079169225" data-variant-qty="1">
+                    <span class="cart-btn-text"> Add to cart</span>
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
+</section>

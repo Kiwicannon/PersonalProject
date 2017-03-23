@@ -205,12 +205,149 @@ option {
     top: 50%;
     width: 0;
 }
-
+.flex-3-grid {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.product-grid {
+    min-height: 400px;
+}
+.product-container .product-result-block {
+    width: 100%;
+    min-height: auto;
+}
+.flex-3-grid li {
+    width: 50%;
+}
+.product-grid-item {
+    position: relative;
+    margin: 0 0 20px;
+    padding: 3px 4px 0;
+    overflow: hidden;
+}
+.product-grid-item .product-grid-item-inside {
+    position: relative;
+    top: 0;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.prod-image-wrap {
+    position: relative;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+.product-grid-item .prod-grid-image-link .img-secondary {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+}
+.prod-image-wrap .img-main, .prod-image-wrap .img-secondary {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    display: block;
+}
+.prod-image-wrap .variant-link:first-child img.product-image {
+    position: relative;
+    z-index: 1;
+    visibility: visible;
+}
+.sunglasses-product-item .product-image.img-main {
+    z-index: 0 !important;
+}
+.product-grid-item .product-info {
+    text-align: center;
+    margin: 25px 0 7px;
+}
+.product-grid-item .product-info h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #d1d1d1;
+    min-height: 22px;
+}
+.product-grid-item .product-info h3, .product-grid-item .product-info a {
+    text-transform: uppercase;
+}
+.product-grid-item .product-info a {
+    display: block;
+    margin: 9px 0 2px;
+    font-family: "Oswald";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: #2c2c2c;
+}
+.product-grid-item .product-info h3, .product-grid-item .product-info a {
+    text-transform: uppercase;
+}
+.product-grid-item .product-info .money-block span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: #2c2c2c;
+}
+.product-grid-item .cart-btn {
+    position: relative;
+    width: 100%;
+}
+.product-info{
+    text-align: center;
+}
+.add-to-cart{
+    display: none;
+}
+.products-container{
+    height: 450px;
+    width: 350px;
+}
+.product-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0 1rem;
+}
+.max-1440 {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 @media only screen and (min-width: 480px){
 
 .collection-banner p {
     display: block;
     max-width: 50%;
+}
+.product-grid-item .product-info h3 {
+    min-height: inherit;
+}
+.product-grid-item .product-info a {
+    font-size: 18px;
+    margin: 13px 0 7px;
+}
+.product-grid-item .product-info .money-block span {
+    font-size: 25px;
 }}
 @media only screen and (min-width: 768px){
 
@@ -236,6 +373,13 @@ option {
 }
 .sort-by-block .select2-container {
     width: 192px !important;
+}
+.product-container .product-result-block {
+    width: 70%;
+    min-height: 600px;
+}
+.product-grid-item .product-info {
+    margin: 25px 0 15px;
 }}
 
 @media only screen and (min-width: 992px){
@@ -264,6 +408,36 @@ option {
 }
 .breadcrumbs .breadcrumb-carrot {
     padding: 0 7px;
+}
+.product-container .product-result-block {
+    width: 75%;
+}
+.product-grid-item.sunglasses-product-item {
+    padding: 39px 3px 36px;
+}
+.product-container .filtering-block {
+    width: 25%;
+}
+.flex-3-grid li {
+    width: 33.33%;
+}
+.product-grid-item .product-info a {
+    font-size: 30px;
+}
+.product-grid-item .cart-btn {
+    display: block;
+    position: absolute;
+    bottom: -54px;
+    width: 99%;
+    padding: 1.3rem 1.75rem;
+    opacity: 0;
+}
+.product-container .product-result-block {
+    width: 75%;
+}
+.product-grid-item {
+    padding: 39px 3px 43px;
 }}
+
 
 
