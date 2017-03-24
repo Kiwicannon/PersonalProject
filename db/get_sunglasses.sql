@@ -1,0 +1,1 @@
+select * from sunglasses INNER JOIN gender ON sunglasses.genderid=gender.id;

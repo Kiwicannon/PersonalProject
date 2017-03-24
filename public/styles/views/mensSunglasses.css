@@ -1,0 +1,357 @@
+
+h1, h2, h3, h5 {
+    font-family: "Oswald";
+    font-weight: 500;
+    text-transform: uppercase;
+     font-weight: 500; 
+    color: #2c2c2c;
+}
+.collection-banner-overflow {
+    overflow: hidden;
+}
+.collection-banner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.collection-banner .banner-content {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 20px 15px;
+}
+.collection-banner h1 {
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+.collection-banner h1, .collection-banner p {
+    color: #fff;
+}
+.collection-banner p {
+    line-height: 1.3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    display: none;
+}
+.collection-bar {
+    z-index: 3 !important;
+    background: #fff;
+    border-top: 1px solid #f7f8f9;
+    border-bottom: 1px solid #f7f8f9;
+    display: none;
+}
+.breadcrumbs {
+    display: none;
+}
+.sort-by-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.sort-by-block .sort-by-title {
+    font-family: "Gotham Book";
+    font-size: 11px;
+    line-height: 36px;
+    letter-spacing: 0.6px;
+    border-right: 1px solid #f7f8f9;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+.sort-by-block .sort-by {
+    line-height: 38px;
+    display: inline-block;
+    margin: 0 0 0 10px;
+    padding: 0 10px 0 0;
+    border: none;
+    border-radius: none;
+    background: transparent url(../assets/Pictures/select-arrows-black.png) no-repeat 115px 14px;
+    background-size: 4%;
+    cursor: pointer;
+    font-family: "Gotham-Bold";
+    font-size: 11px;
+    letter-spacing: 1px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0px;
+    color: #222;
+}
+.select2-hidden-accessible {
+    border: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+}
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+.flex-3-grid {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.product-grid {
+    min-height: 400px;
+}
+.product-container .product-result-block {
+    width: 100%;
+    min-height: auto;
+}
+.flex-3-grid li {
+    width: 50%;
+}
+.product-grid-item {
+    position: relative;
+    margin: 0 0 20px;
+    padding: 3px 4px 0;
+    overflow: hidden;
+    width: 33.33%
+}
+.product-grid-item .product-grid-item-inside {
+    position: relative;
+    top: 0;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.prod-image-wrap {
+    position: relative;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+.product-grid-item .prod-grid-image-link .img-secondary {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+}
+.prod-image-wrap .img-main, .prod-image-wrap .img-secondary {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    display: block;
+}
+.prod-image-wrap .variant-link:first-child img.product-image {
+    position: relative;
+    z-index: 1;
+    visibility: visible;
+}
+.sunglasses-product-item .product-image.img-main {
+    z-index: 0 !important;
+}
+.product-grid-item .product-info {
+    text-align: center;
+    margin: 25px 0 7px;
+}
+.product-grid-item .product-info h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #d1d1d1;
+    min-height: 22px;
+}
+.product-grid-item .product-info h3, .product-grid-item .product-info a {
+    text-transform: uppercase;
+}
+.product-grid-item .product-info a {
+    display: block;
+    margin: 9px 0 2px;
+    font-family: "Oswald";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: #2c2c2c;
+}
+.product-grid-item .product-info h3, .product-grid-item .product-info a {
+    text-transform: uppercase;
+}
+.product-grid-item .product-info .money-block span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: #2c2c2c;
+}
+.product-grid-item .cart-btn {
+    position: relative;
+    width: 100%;
+}
+.product-info{
+    text-align: center;
+}
+.add-to-cart{
+    display: none;
+}
+.products-container{
+    height: 450px;
+    width: 325px;
+}
+.product-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0 1rem;
+}
+.max-1440 {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+@media only screen and (min-width: 480px){
+
+.collection-banner p {
+    display: block;
+    max-width: 50%;
+}
+.product-grid-item .product-info h3 {
+    min-height: inherit;
+}
+.product-grid-item .product-info a {
+    font-size: 18px;
+    margin: 13px 0 7px;
+}
+.product-grid-item .product-info .money-block span {
+    font-size: 25px;
+}}
+@media only screen and (min-width: 768px){
+
+.collection-banner {
+    height: 260px;
+}
+.collection-banner .banner-content {
+    padding: 50px;
+}
+.collection-banner h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+.collection-banner p {
+    font-size: 22px;
+    max-width: 495px;
+}
+.collection-bar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.sort-by-block .select2-container {
+    width: 192px !important;
+}
+.product-container .product-result-block {
+    width: 70%;
+    min-height: 600px;
+}
+.product-grid-item .product-info {
+    margin: 25px 0 15px;
+}}
+
+@media only screen and (min-width: 992px){
+
+.breadcrumbs {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    padding: 0.6rem 1rem 0.5rem;
+}
+.breadcrumbs a, .breadcrumbs .breadcrumb-carrot {
+     color: #d1d1d1; 
+}
+.breadcrumbs .breadcrumb-carrot {
+    padding: 0 7px;
+}
+.product-container .product-result-block {
+    width: 75%;
+}
+.product-grid-item.sunglasses-product-item {
+    padding: 39px 3px 36px;
+}
+.product-container .filtering-block {
+    width: 25%;
+}
+.flex-3-grid li {
+    width: 33.33%;
+}
+.product-grid-item .product-info a {
+    font-size: 30px;
+}
+.product-grid-item .cart-btn {
+    display: block;
+    position: absolute;
+    bottom: -54px;
+    width: 99%;
+    padding: 1.3rem 1.75rem;
+    opacity: 0;
+}
+.product-container .product-result-block {
+    width: 75%;
+}
+.product-grid-item {
+    padding: 39px 3px 43px;
+}}
+
+
+

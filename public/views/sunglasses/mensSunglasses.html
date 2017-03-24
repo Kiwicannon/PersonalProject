@@ -40,7 +40,7 @@
     </div>
 </section>
 <section class="product-container max-1440">
-    <div class="filtering-block">
+    <!--<div class="filtering-block">
         <div class="filtering-block-inside">
             <div class="filter-by-block">
                 <div class="standard-aside-title">Filter By:</div>
@@ -50,17 +50,21 @@
             </div>
             <div class="refinement-sunglasses-frame-color filter-accordion-block">
                 <div class="filter-title">Frame Color</div>
-                <ul class="refinement-list" data-option="framecolor" >
+                <ul class="refinement-list" data-option="framecolor">
                     <li style="width: 100%;" class="filter-select-wrapper framecolor-gold">
-                        <input type="checkbox" class="filter-button checkbox-custom is-selected" data-filter-title="gold" data-filter=".framecolor-gold" id="gold">
+                        <input type="checkbox" class="filter-button checkbox-custom is-selected" data-filter=".framecolor-gold"
+                            id="gold" ng-model="filter['gold']">
                         <label class="filter-value checkbox-custom-label" title="gold" for="gold">gold</label>
                     </li>
                     <li style="width: 100%;" class="filter-select-wrapper framecolor-black">
-                        <input type="checkbox" class="filter-button checkbox-custom is-selected" data-filter-title="black" data-filter=".framecolor-black" id="black">
+                        <input type="checkbox" class="filter-button checkbox-custom is-selected" data-filter-title="black" data-filter=".framecolor-black"
+                            id="black">
                         <label class="filter-value checkbox-custom-label" title="black" for="black">black</label>
                     </li>
                     <li style="width: 100%;" class="filter-select-wrapper framecolor-tortoise">
-                        <input type="checkbox" class="filter-button checkbox-custom is-selected" data-filter-title="tortoise" data-filter=".framecolor-tortoise" id="tortoise">
+                        <input type="checkbox" ng-checked="product.checked" ng-model="product.checked" /> 
+                        <<input type="checkbox" class="filter-button checkbox-custom is-selected" data-filter-title="tortoise" data-filter=".framecolor-tortoise"
+                            id="tortoise" ng-change="checkChange()">
                         <label class="filter-value checkbox-custom-label" title="tortoise" for="tortoise">tortoise</label>
                     </li>
                 </ul>
@@ -69,29 +73,35 @@
                 <div class="filter-title">
                     Lens Color
                 </div>
-                <ul class="refinement-list" data-option="lenscolor" >
+                <ul class="refinement-list" data-option="lenscolor">
                     <li style="width: 100%;" class="filter-select-wrapper lenscolor-blue">
-                        <input type="checkbox" class="filter-button checkbox-custom is-selected" data-filter-title="blue" data-filter=".lenscolor-blue" id="blue">
+                        <input type="checkbox" class="filter-button checkbox-custom is-selected" data-filter-title="blue" data-filter=".lenscolor-blue"
+                            id="blue">
                         <label class="filter-value checkbox-custom-label" title="blue" for="blue">blue</label>
                     </li>
                     <li style="width: 100%;" class="filter-select-wrapper lenscolor-gold">
-                        <input type="checkbox" class="filter-button checkbox-custom is-selected" data-filter-title="gold" data-filter=".lenscolor-gold" id="gold">
+                        <input type="checkbox" class="filter-button checkbox-custom is-selected" data-filter-title="gold" data-filter=".lenscolor-gold"
+                            id="gold">
                         <label class="filter-value checkbox-custom-label" title="gold" for="gold">gold</label>
                     </li>
                     <li style="width: 100%;" class="filter-select-wrapper lenscolor-mirror">
-                        <input type="checkbox" class="filter-button checkbox-custom is-selected" data-filter-title="mirror" data-filter=".lenscolor-mirror" id="mirror">
+                        <input type="checkbox" class="filter-button checkbox-custom is-selected" data-filter-title="mirror" data-filter=".lenscolor-mirror"
+                            id="mirror">
                         <label class="filter-value checkbox-custom-label" title="mirror" for="mirror">mirror</label>
                     </li>
                     <li style="width: 100%;" class="filter-select-wrapper lenscolor-brown">
-                        <input type="checkbox" class="filter-button checkbox-custom is-selected" data-filter-title="brown" data-filter=".lenscolor-brown" id="brown">
+                        <input type="checkbox" class="filter-button checkbox-custom is-selected" data-filter-title="brown" data-filter=".lenscolor-brown"
+                            id="brown">
                         <label class="filter-value checkbox-custom-label" title="brown" for="brown">brown</label>
                     </li>
                     <li style="width: 100%;" class="filter-select-wrapper lenscolor-green">
-                        <input type="checkbox" class="filter-button checkbox-custom is-selected" data-filter-title="green" data-filter=".lenscolor-green" id="green">
+                        <input type="checkbox" class="filter-button checkbox-custom is-selected" data-filter-title="green" data-filter=".lenscolor-green"
+                            id="green">
                         <label class="filter-value checkbox-custom-label" title="green" for="green">green</label>
                     </li>
                     <li style="width: 100%;" class="filter-select-wrapper lenscolor-grey">
-                        <input type="checkbox" class="filter-button checkbox-custom is-selected" data-filter-title="grey" data-filter=".lenscolor-grey" id="grey">
+                        <input type="checkbox" class="filter-button checkbox-custom is-selected" data-filter-title="grey" data-filter=".lenscolor-grey"
+                            id="grey">
                         <label class="filter-value checkbox-custom-label" title="grey" for="grey">grey</label>
                     </li>
                 </ul>
@@ -100,15 +110,18 @@
                 <div class="filter-title">Shape</div>
                 <ul class="refinement-list" data-option="sunglassshape">
                     <li style="width: 100%;" class="filter-select-wrapper sunglassesshape-aviator">
-                        <input type="checkbox" class="filter-button checkbox-custom" data-filter-title="aviator" data-filter=".sunglassshape-aviator" id="aviator">
+                        <input type="checkbox" class="filter-button checkbox-custom" data-filter-title="aviator" data-filter=".sunglassshape-aviator"
+                            id="aviator">
                         <label class="filter-value checkbox-custom-label" title="aciator" for="aviator">aviator</label>
                     </li>
                     <li style="width: 100%;" class="filter-select-wrapper sunglassesshape-rectangle">
-                        <input type="checkbox" class="filter-button checkbox-custom" data-filter-title="rectangle" data-filter=".sunglassshape-rectangle" id="rectangle">
+                        <input type="checkbox" class="filter-button checkbox-custom" data-filter-title="rectangle" data-filter=".sunglassshape-rectangle"
+                            id="rectangle">
                         <label class="filter-value checkbox-custom-label" title="aciator" for="rectangle">rectangle</label>
                     </li>
                     <li style="width: 100%;" class="filter-select-wrapper sunglassesshape-round">
-                        <input type="checkbox" class="filter-button checkbox-custom" data-filter-title="round" data-filter=".sunglassshape-round" id="round">
+                        <input type="checkbox" class="filter-button checkbox-custom" data-filter-title="round" data-filter=".sunglassshape-round"
+                            id="round">
                         <label class="filter-value checkbox-custom-label" title="aciator" for="round">round</label>
                     </li>
                 </ul>
@@ -123,7 +136,8 @@
                         <label class="filter-value checkbox-custom-label" title="wide" for="wide">wide</label>
                     </li>
                     <li style="width: 100%;" class="filter-select-wrapper sunglasswidth-medium">
-                        <input type="checkbox" class="filter-button checkbox-custom" data-filter-title="medium" data-filter=".sunglasswidth-medium" id="medium">
+                        <input type="checkbox" class="filter-button checkbox-custom" data-filter-title="medium" data-filter=".sunglasswidth-medium"
+                            id="medium">
                         <label class="filter-value checkbox-custom-label" title="medium" for="medium">medium</label>
                     </li>
                 </ul>
@@ -132,7 +146,8 @@
                 <div class="filter-title">Polarized</div>
                 <ul class="refinement-list" data-option="sunglasspolarized">
                     <li style="width: 100%;" class="filter-select-wrapper sunglasspolarized-polarized">
-                        <input type="checkbox" class="filter-button checkbox-custom" data-filter-title="polarized" data-filter=".sunglasspolarized-polarized" id="polarized">
+                        <input type="checkbox" class="filter-button checkbox-custom" data-filter-title="polarized" data-filter=".sunglasspolarized-polarized"
+                            id="polarized">
                         <label class="filter-value checkbox-custom-label" title="polzrized" for="polarized">
                             polarized
                         </label>
@@ -144,17 +159,19 @@
             <div class="refinement-sunglasses-gender filter-accordion-block">
                 <div class="filter-title">Gender
                 </div>
-                    <ul class="refinement-list" data-option="sunglassgender">
-                        <li style="width: 100%;" class="filter-select-wrapper sunglassgender-mens">
-                            <input type="checkbox" class="filter-button checkbox-custom" data-filter-title="mens" data-filter=".sunglassgender-mens" id="mens">
-                            <label class="filter-value checkbox-custom-label" title="mens" for="mens">mens</label>
-                        </li>
-                        <li style="width: 100%;" class="filter-select-wrapper sunglassgender-unisex">
-                            <input type="checkbox" class="filter-button checkbox-custom" data-filter-title="unisex" data-filter=".sunglassgender-unisex" id="unisex">
-                            <label class="filter-value checkbox-custom-label" title="unisex" for="unisex">unisex</label>
-                        </li>
+                <ul class="refinement-list" data-option="sunglassgender">
+                    <li style="width: 100%;" class="filter-select-wrapper sunglassgender-mens">
+                        <input type="checkbox" class="filter-button checkbox-custom" data-filter-title="mens" data-filter=".sunglassgender-mens"
+                            id="mens">
+                        <label class="filter-value checkbox-custom-label" title="mens" for="mens">mens</label>
+                    </li>
+                    <li style="width: 100%;" class="filter-select-wrapper sunglassgender-unisex">
+                        <input type="checkbox" class="filter-button checkbox-custom" data-filter-title="unisex" data-filter=".sunglassgender-unisex"
+                            id="unisex">
+                        <label class="filter-value checkbox-custom-label" title="unisex" for="unisex">unisex</label>
+                    </li>
 
-                    </ul>
+                </ul>
             </div>
 
             <div class="refinement-colors folter-accordion-block" style="display: none;">
@@ -164,42 +181,37 @@
                 <div class="filter-title">Strap</div>
             </div>
         </div>
-    </div>
+    </div>-->
+<div class="filtering-block">
+            Filter:<input type="text" ng-model="filterText"/>
+        </div>
 
 
-<!--<div class="product-result-block flex-3-grid">
-    <ul  class="products-container " ng-repeat="product in products">
-        <img class="img-container" src='{{product.photo1front}}'>
-        
-        <li>{{product.name}}</li>
-        <li>{{product.price}}</li>
-    </ul>
-    
-</div>-->
 
-<div class="product-result-block">
-    <div class="product-grid flex-3-grid">
-        <div class="products-container product-grid-item" ng-repeat="product in products">
-            <div class="product-grid-item-inside">
-                <div class="prod-image-wrap">
-                    <!--<img class="img-secondary js-sunglasses-image" src="{{product.photo1side}}" data-variant="Pure Black/Crystal Mirror" style="visibility:hidden;">-->
-                    <img class="product-image img-main js-sunglasses-image" src="{{product.photo1front}}" data-variant="Pure Black/Crystal Mirror">
-                </div>
-                <div class="product-info">
-                    <h3>{{product.gendertype}} sunglasses</h3>
-                    <a>{{product.name}}</a>
-                    <div class="money-block">
-                        <span class="actual-price">
-                            <span class="money" data-currency-usd="{{product.price}}" data-currency="USD">{{product.price}}</span>
-                        </span>
+    <div class="product-result-block">
+        <div class="product-grid flex-3-grid">
+            <div class="products-container product-grid-item" ng-repeat="product in products | filter: filterText track by $index">
+                <div class="product-grid-item-inside">
+                    <div class="prod-image-wrap">
+                        <!--<img class="img-secondary js-sunglasses-image" src="{{product.photo1side}}" data-variant="Pure Black/Crystal Mirror" style="visibility:hidden;">-->
+                        <img class="product-image img-main js-sunglasses-image" src="{{product.photo1front}}" data-variant="Pure Black/Crystal Mirror">
                     </div>
+                    <div class="product-info">
+                        <h3>{{product.gendertype}} sunglasses</h3>
+                        <a>{{product.name}}</a>
+                        <div class="money-block">
+                            <span class="actual-price">
+                            <span class="money" data-currency-usd="{{product.price}}" data-currency="USD">{{product.price}}</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="variant-swatches variant-swatches--center"></div>
+                    <a href="#" class="add-to-cart button button--black-gradient cart-btn cart-btn-desktop test" add-to-cart data-variant-id="29079169225"
+                        data-variant-qty="1">
+                        <span class="cart-btn-text"> Add to cart</span>
+                    </a>
                 </div>
-                <div class="variant-swatches variant-swatches--center"></div>
-                <a href="#" class="add-to-cart button button--black-gradient cart-btn cart-btn-desktop test" add-to-cart data-variant-id="29079169225" data-variant-qty="1">
-                    <span class="cart-btn-text"> Add to cart</span>
-                </a>
             </div>
         </div>
     </div>
-</div>
 </section>

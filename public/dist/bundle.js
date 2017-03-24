@@ -1,13 +1,33 @@
-angular.module('app').controller('mainCtrl', function($scope, mainSvc){
-   mainSvc.getProducts().then(function(response){
-       $scope.products = response
-    //    console.log($scope.products)
-//     $scope.$watch('products', function(){
-//         console.log($scope.products);
-//     })
-    
-   })
-})
+'use strict';
+
+angular.module('app', ['ui.router']).config(function ($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.when('', '/');
+
+    $urlRouterProvider.otherwise('/404');
+
+    $stateProvider.state('home', {
+        url: '/',
+        templateUrl: './views/home/home.html'
+    }).state('sunglasses', {
+        url: '/sunglasses',
+        templateUrl: './views/sunglasses/sunglasses.html'
+    }).state('mens-sunglasses', {
+        url: '/mens-sunglasses',
+        templateUrl: './views/sunglasses/mensSunglasses.html',
+        controller: 'mainCtrl'
+    });
+});
+'use strict';
+
+angular.module('app').controller('mainCtrl', function ($scope, mainSvc) {
+   mainSvc.getProducts().then(function (response) {
+      $scope.products = response;
+      //    console.log($scope.products)
+      //     $scope.$watch('products', function(){
+      //         console.log($scope.products);
+      //     })
+   });
+});
 // //defining filter
 // app.filter('selectedProducts', function($filter){
 //     return function(products) {
@@ -43,3 +63,22 @@ angular.module('app').controller('mainCtrl', function($scope, mainSvc){
 //        return ret;
 //     }
 // })
+'use strict';
+
+angular.module('app').controller('homeCtrl', function ($scope, mainSvc) {});
+'use strict';
+
+angular.module('app').controller('sunglassesCtrl', function ($scope, mainSvc) {});
+"use strict";
+
+$(document).ready(function () {});
+'use strict';
+
+angular.module('app').service('mainSvc', function ($http) {
+    this.getProducts = function () {
+        return $http.get('/api/products').then(function (res) {
+
+            return res.data;
+        });
+    };
+});
