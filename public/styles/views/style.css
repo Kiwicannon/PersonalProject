@@ -643,6 +643,7 @@ img {
      background: #c74f4b;
     color: #fff;
 }
+
 @media only screen and (min-width: 480px){
 .mens-womens-block .cta-block.block-1 {
     background-image: url(../assets/Pictures/Mens-block700x700.jpg);
@@ -782,8 +783,11 @@ img {
 }
 .blog-strap-block .straps-block .cta-content {
     padding: 50px 15px;
+}
+.template__index main {
+    margin-top: 122px;
 }}
-/*@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1024px){
 .sunglasses-block {
     min-height: 525px;
 }
@@ -793,4 +797,12 @@ img {
 .mens-womens-block .cta-block {
     min-height: 525px;
 }
-}*/
+.mens-womens-block .cta-block.block-2 {
+    background: url(../assets/Pictures/Womens-block-2_920x.jpg);
+}
+}
+@media screen and (min-width: 1440px){
+
+.mens-womnes-block .cta-block {
+    min-height: 650px;
+}}

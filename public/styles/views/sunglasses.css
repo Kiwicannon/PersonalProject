@@ -56,7 +56,9 @@
     height: 150px;
     width: 150px;
 }
-
+.home-page-block{
+    padding-top: 30px;
+}
 
 @media only screen and (min-width: 480px){
 
@@ -92,4 +94,9 @@
 .nav-picture>a>span {
     font-size: 60px;
     line-height: 1.2em;
+}}
+@media screen and (min-width: 1440px){
+
+.mens-womnes-block .cta-block {
+    min-height: 650px;
 }}
